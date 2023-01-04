@@ -21,7 +21,7 @@ from model import build_model, collect_params
 from utils import get_config, load_checkpoint, save_checkpoint, save_nii_data
 from utils.logger import create_logger, plot_image, plot_line
 
-from main_utils import _build_optimizer
+from utils_main import _build_optimizer
 
 import resource
 rlimit = resource.getrlimit(resource.RLIMIT_NOFILE)
