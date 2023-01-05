@@ -100,9 +100,9 @@ class Trainer(object):
         label_name = self.config.DATA.LABEL[0]
         for _idx, data in enumerate(self.train_data_loader):
             if self.config.ENVIRONMENT.CUDA:
-                image = image.cuda(non_blocking=True)[0]
+                image = image.cuda(non_blocking=True)
                 label = label.cuda(non_blocking=True)
-            pass
+
 
 if __name__ == "__main__":
     config = parse_option()
