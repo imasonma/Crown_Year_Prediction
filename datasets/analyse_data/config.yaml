@@ -1,5 +1,6 @@
 ENVIRONMENT:
-  DATA_BASE_DIR: '/raid0/myk/FLARE22/'
+  DATA_BASE_DIR: '/raid0/myk/Y064/NiiData/'
+  CATCH_DIR: '/home/myk/AL_MultiModal/experiment/'
 
 DATA_PREPARE:
   TRAIN_SERIES_IDS_TXT: 'file_list/train_series_uids.txt'
@@ -7,6 +8,7 @@ DATA_PREPARE:
   BAD_CASE_SERIES_IDS_TXT: 'file_list/lesion_case.txt'
   #TRAIN_IMAGE_DIR: 'images'
   IMAGE_MODAL: ['CT']
+  MASK_MODAL: 'label'
   TRAIN_IMAGE_DIR: 'images'
   TRAIN_MASK_DIR: 'labels'
   TEST_IMAGE_DIR: 'val_images'
